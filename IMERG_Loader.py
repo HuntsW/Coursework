@@ -4,8 +4,6 @@ import numpy as np
 import xarray as xr
 import requests
 
-os.chdir('C:\\Users\\Hunts\\OneDrive\\Desktop\\Rainfall Data')
-
 ds = pd.read_csv('subset_GPM_3IMERGDL_06_20221221_040812_.txt', header=None, sep='\r\n', engine='python')[0]
 
 for file in range(2, len(ds)):
